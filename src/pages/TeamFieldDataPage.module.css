@@ -1,0 +1,82 @@
+.memberCard {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-info-bg);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+}
+
+.memberCard h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.role {
+  font-size: 13px;
+  color: var(--color-primary);
+  margin: 4px 0 12px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+}
+
+.pondsChecked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 12px;
+  color: var(--color-text);
+}
+
+.entriesTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.entriesTable th,
+.entriesTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.entriesTable th {
+  font-weight: 600;
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+.time {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.checklist {
+  list-style: disc;
+  padding-left: 24px;
+  font-size: 14px;
+  line-height: 1.8;
+}

@@ -1,0 +1,311 @@
+.page {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-page-bg);
+}
+
+.hero {
+  flex: 0 0 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 23, 42, 0.6);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  padding: 80px 48px;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoCircle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.logoCircle img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+}
+
+.heroTitle {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.heroTagline {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 48px;
+  opacity: 0.95;
+}
+
+.sep {
+  margin: 0 8px;
+  opacity: 0.6;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 48px;
+  margin-top: auto;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature {
+  display: flex;
+  gap: 12px;
+}
+
+.featureIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.feature p {
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.formSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.formCard {
+  background: #fdfdfd;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 48px 52px;
+  width: 100%;
+  max-width: 555px;
+}
+
+.welcome {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  color: #121212;
+  margin-bottom: 8px;
+}
+
+.accentLine {
+  width: 100px;
+  height: 4px;
+  background: var(--color-accent-green);
+  margin: 0 auto 16px;
+  border-radius: 2px;
+}
+
+.formSubtitle {
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.inputWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 16px;
+  color: var(--color-text-placeholder);
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  height: 56px;
+  padding: 0 48px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 16px;
+  color: var(--color-text);
+  background: #fff;
+}
+
+.input::placeholder {
+  color: var(--color-text-placeholder);
+}
+
+.input:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 0;
+  border-color: var(--color-primary);
+}
+
+.eyeBtn {
+  position: absolute;
+  right: 16px;
+  color: var(--color-text-placeholder);
+  display: flex;
+  align-items: center;
+}
+
+.formRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+
+.checkbox input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-primary);
+}
+
+.formRow a {
+  font-weight: 500;
+}
+
+.btnPrimary {
+  width: 100%;
+  height: 56px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  margin-top: 8px;
+}
+
+.btnPrimary:hover {
+  background: var(--color-primary-hover);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0;
+  color: #6b6b6b;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.btnOutline {
+  width: 100%;
+  height: 56px;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  background: #fff;
+}
+
+.btnOutline:hover {
+  background: #f0f7ff;
+}
+
+.signup {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.signup a {
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .hero {
+    flex: none;
+    min-height: 400px;
+  }
+
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+}

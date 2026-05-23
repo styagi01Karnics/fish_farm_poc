@@ -1,0 +1,112 @@
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.selectLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.select {
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  min-width: 220px;
+}
+
+.refreshBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+}
+
+.live {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--color-success);
+  font-weight: 500;
+}
+
+.readingsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.readingCard {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.paramName {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.paramValue {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.levelValue {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.ideal {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.allPondsTable {
+  overflow-x: auto;
+}
+
+.allPondsTable table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.allPondsTable th,
+.allPondsTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.allPondsTable th {
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.time {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}

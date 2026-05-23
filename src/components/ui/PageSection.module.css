@@ -1,0 +1,14 @@
+.section {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--color-text);
+}

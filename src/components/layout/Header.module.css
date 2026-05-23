@@ -1,0 +1,84 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 24px 32px 16px;
+  gap: 24px;
+}
+
+.titleBlock {
+  flex: 1;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.iconBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  box-shadow: var(--shadow-sm);
+}
+
+.iconBtn:hover {
+  background: #f0f4f8;
+}
+
+.divider {
+  width: 1px;
+  height: 32px;
+  background: #e5e7eb;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.role {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.chevron {
+  color: var(--color-text-muted);
+}

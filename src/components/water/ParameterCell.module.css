@@ -1,0 +1,22 @@
+.cell {
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.unit {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.normal {
+  color: var(--color-success-text);
+}
+
+.warning {
+  color: var(--color-warning-text);
+}
+
+.critical {
+  color: var(--color-danger-text);
+}

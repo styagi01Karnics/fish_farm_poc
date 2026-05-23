@@ -1,0 +1,161 @@
+.alertList {
+  list-style: none;
+}
+
+.alertItem {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+  align-items: flex-start;
+}
+
+.severityIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.severityIcon.critical {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+}
+
+.severityIcon.warning {
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+}
+
+.alertBody {
+  flex: 1;
+}
+
+.alertHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.alertBody p {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.ideal {
+  font-size: 13px;
+}
+
+.diseaseLink {
+  margin-top: 4px;
+  color: var(--color-danger-text) !important;
+  font-size: 13px !important;
+}
+
+.time {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.diseaseList {
+  list-style: none;
+}
+
+.diseaseItem {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #f0f0f0;
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+  align-items: flex-start;
+}
+
+.bugIcon {
+  color: var(--color-warning);
+  flex-shrink: 0;
+}
+
+.category {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 12px;
+  padding: 2px 8px;
+  background: #f0f4f8;
+  border-radius: 4px;
+}
+
+.symptoms,
+.treatment {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+.guideIntro {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+}
+
+.diseaseTableWrap {
+  overflow-x: auto;
+}
+
+.diseaseTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.diseaseTable th,
+.diseaseTable td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: top;
+}
+
+.diseaseTable th {
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: #fafbfc;
+}
+
+.diseaseName {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.typeBadge {
+  font-size: 11px;
+  padding: 2px 8px;
+  background: #e8eef5;
+  border-radius: 4px;
+}
+
+.empty {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.warningBanner {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: var(--color-warning-bg);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  color: var(--color-warning-text);
+  align-items: flex-start;
+}
+
+.warningBanner svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}

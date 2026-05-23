@@ -1,0 +1,40 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.good {
+  background: var(--color-success-bg);
+  color: var(--color-success-text);
+}
+
+.moderate {
+  background: var(--color-warning-bg);
+  color: var(--color-warning-text);
+}
+
+.poor {
+  background: var(--color-danger-bg);
+  color: var(--color-danger-text);
+}
+
+.normal {
+  background: var(--color-success-bg);
+  color: var(--color-success-text);
+}
+
+.warning {
+  background: var(--color-warning-bg);
+  color: var(--color-warning-text);
+}
+
+.critical {
+  background: var(--color-danger-bg);
+  color: var(--color-danger-text);
+}
